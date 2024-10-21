@@ -1,0 +1,163 @@
+
+
+/*
+Rojo = #7A242B;
+Gris #5A5A5A
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #fdfdfd !important; 
+}
+
+header {
+    width: 100%;
+}
+header nav hr{
+    color: #5A5A5A;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7B242C;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7B242C;
+    padding: 20px;
+}
+
+.center{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.parrafo{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #7B242C;
+
+}
+
+.banner{
+    width: 100%;
+}
+
+.logo {
+    
+    width: 150px;
+}
+
+.text-infos{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #7B242C;
+    width: 800px;
+}
+
+.galeria-grid{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-row-gap: 4rem;
+    justify-items: center;
+    
+}
+.galeria-grid p {
+    text-align: justify;
+}
+
+.galeria-info{
+    margin: 5px 30px 30px 30px;
+}
+.info {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    gap: 150px;
+}
+
+.img-info{
+    width: 400px;
+}
+
+.Subtitulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.galeria-personas{
+    display: flex;
+    justify-content: center;
+}
+
+.persona-info img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.persona-info{
+    width: 120px;
+    display: block;
+    padding: 30px;
+}
+
+.p-text{
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7B242C;
+}
+
+
+.Form-Map{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.f-title{
+    text-align: left;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7B242C;
+}
+
