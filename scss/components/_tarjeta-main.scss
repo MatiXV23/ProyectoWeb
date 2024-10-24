@@ -1,0 +1,42 @@
+@import "../utilities/variables";
+
+
+.tarjeta-main{
+    display: flex;
+    width: 80%;
+    margin: 10rem 10rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(123,36,44,1) 39%, rgba(103,34,41,1) 84%); 
+    justify-content: space-around;
+    padding: 20px;
+
+    div{
+        
+        width: 30%;
+        
+
+        &:first-child{
+            color: $blanco;
+            text-align: center;
+            h2{
+                color: $blanco;
+            }
+            
+        }
+        &:last-child{
+            text-align: justify;
+            background-color: $blanco;
+            padding: 4rem 1rem;
+            transform: translateY(30px);
+            -webkit-box-shadow: -18px 17px 28px -10px rgba(0,0,0,0.75);
+            -moz-box-shadow: -18px 17px 28px -10px rgba(0,0,0,0.75);
+            box-shadow: -18px 17px 28px -10px rgba(0,0,0,0.75);
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+
+}

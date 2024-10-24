@@ -1,0 +1,29 @@
+.seccion-nosotros {
+
+    div{
+        @include flex-simple;
+        padding: 3rem;
+        border-bottom: 1px solid grey;
+        img{
+            max-width: 400px;
+        }
+    }
+    .galeria-personas {
+        @include flex-simple;
+        div{
+            display: block;
+            justify-content: center;
+            text-align: center;
+            border-bottom: none;
+            width: 20%;
+            img{
+                width: 100px;
+                border-radius: 40%;
+                -webkit-box-shadow: -12px 12px 25px -7px rgba(0,0,0,0.75);
+                -moz-box-shadow: -12px 12px 25px -7px rgba(0,0,0,0.75);
+                box-shadow: -12px 12px 25px -7px rgba(0,0,0,0.75);
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}

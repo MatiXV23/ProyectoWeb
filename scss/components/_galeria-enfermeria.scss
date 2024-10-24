@@ -1,0 +1,23 @@
+@import "../utilities/variables";
+
+.galeria-enfermeria {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: (3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem;
+    margin-right: 2rem;
+    
+
+    img {
+        max-width: 400px;
+    }
+    p{
+        font-family: $lato;
+        text-align: justify;
+    }
+    
+
+}

@@ -1,0 +1,12 @@
+@import "../utilities/variables";
+
+header{
+    border-bottom: 1px solid grey;
+    background-color: $blanco;
+    font-family: $lato;
+    font-size: 1.2rem;
+    img{
+        width: 8rem;
+    }
+    
+}

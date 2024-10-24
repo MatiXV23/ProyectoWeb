@@ -1,0 +1,93 @@
+@import "../utilities/variables";
+
+
+
+.galeria-grid{
+    @include grid(4, 3, 1.2rem);
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    
+
+    img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    div{
+        font-size: 2rem;
+        font-family: $lato;
+
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        transition: filter 0.3s ease;
+        position: relative;
+
+        p{
+            color: white;
+            margin-top: 10px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        span{
+            color:#00000000;
+        }
+
+        &:nth-child(1){
+            @include galery-img('../../src/Cursos/Soldadura.jpeg');
+        }
+        &:nth-child(2){
+            @include galery-img('../../src/Cursos/Retro.jpg');
+        }
+        &:nth-child(3){
+            @include galery-img('../../src/Cursos/Isopanel.jpg');
+        }
+        &:nth-child(4){
+            @include galery-img('../../src/Cursos/Paneles.jpeg');
+        }
+        &:nth-child(5){
+            @include galery-img('../../src/Cursos/Obraseca.jpg');
+        }
+        &:nth-child(6){
+            @include galery-img('../../src/Cursos/Albañileria.jpg');
+        }
+        &:nth-child(7){
+            @include galery-img('../../src/Cursos/Cocina.jpg');
+        }
+        &:nth-child(8){
+            @include galery-img('../../src/Cursos/Reposteria.jpg');
+        }
+
+
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color 0.3s ease;
+        }
+
+        &:hover::before {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        &:hover {
+            transition: 0.5s;
+            transform: scale(105%);
+            p{
+                color: #00000000;
+                -webkit-text-stroke-color: #00000000;
+            }
+            span {
+                position: relative;
+                z-index: 2;
+                color: white;
+            }
+        }
+    }
+    
+}

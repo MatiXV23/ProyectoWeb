@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+
+
+.Form-Map {
+    @include grid(2,1,2.4rem);
+    padding: 3rem;
+    img{
+        -webkit-box-shadow: -16px 17px 12px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: -16px 17px 12px -8px rgba(0,0,0,0.75);
+        box-shadow: -16px 17px 12px -8px rgba(0,0,0,0.75);
+    }
+    .formulario {
+        font-family: $lato;
+        font-size: 1.8rem;
+        color: $rojo;
+    }
+}

@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+h1 {
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.Subtitulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: $lato;
+    font-weight: 700;
+    font-style: normal;
+    color: $rojo;
+    padding: 20px;
+}
