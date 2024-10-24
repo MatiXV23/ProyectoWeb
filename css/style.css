@@ -9,6 +9,19 @@ header img {
   width: 8rem;
 }
 
+.whatsapp-logo {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  transition: 2.5s;
+}
+.whatsapp-logo img {
+  width: 50px;
+}
+.whatsapp-logo:hover {
+  transform: rotate(360deg);
+}
+
 * {
   margin: 0;
   padding: 0;
