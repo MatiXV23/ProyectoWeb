@@ -1,18 +1,10 @@
 .seccion-nosotros {
-
-    div{
-        @include flex-simple;
-        padding: 3rem;
-        border-bottom: 1px solid grey;
-        img{
-            max-width: 400px;
-        }
-    }
     .galeria-personas {
-        @include flex-simple;
         div{
-            display: block;
-            justify-content: center;
+            flex: 1 1 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             border-bottom: none;
             width: 20%;
@@ -24,6 +16,80 @@
                 box-shadow: -12px 12px 25px -7px rgba(0,0,0,0.75);
                 margin-bottom: 1.2rem;
             }
+        }
+    }
+    div{
+        img{
+            max-width: 400px;
+        }
+    }
+    
+    @include mobile {
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid grey;
+            p{
+                margin-top: 2rem;
+                span{
+                    text-align: center;
+                }
+            }
+            
+            &:nth-child(2){
+                p{
+                    order: 1;
+                }
+            }
+        }
+        .galeria-personas {
+            @include grid(2,4, 1.2rem)
+            
+        }
+    }
+
+    @include tablet {
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid grey;
+            p{
+                margin-top: 2rem;
+                span{
+                    text-align: center;
+                }
+            }
+            
+            &:nth-child(2){
+                p{
+                    order: 1;
+                }
+            }
+        }
+        .galeria-personas {
+            @include grid(3,2, 2.8rem);
+        }
+    }
+  
+
+    @include desktop {
+        div{
+            gap: 2rem;
+            display: flex;
+            padding: 3rem;
+            border-bottom: 1px solid grey;
+            img{
+                max-width: 400px;
+            }
+        }
+        .galeria-personas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 }

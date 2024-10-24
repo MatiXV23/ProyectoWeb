@@ -2,8 +2,7 @@
 
 
 .Form-Map {
-    @include grid(2,1,2.4rem);
-    padding: 3rem;
+   
     img{
         -webkit-box-shadow: -16px 17px 12px -8px rgba(0,0,0,0.75);
         -moz-box-shadow: -16px 17px 12px -8px rgba(0,0,0,0.75);
@@ -13,5 +12,28 @@
         font-family: $lato;
         font-size: 1.8rem;
         color: $rojo;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        img{
+            width: 100%;
+        }
+    }
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        img{
+            width: 100%;
+        }
+    }
+    @include desktop {
+        @include grid(2,1,2.4rem);
+        padding: 3rem;
     }
 }

@@ -1,16 +1,7 @@
 @import "../utilities/variables";
 
 .galeria-enfermeria {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: (3, 1fr);
-    gap: 2rem;
-    align-items: center;
-    justify-items: center;
-    padding: 3rem;
-    margin-right: 2rem;
     
-
     img {
         max-width: 400px;
     }
@@ -18,6 +9,50 @@
         font-family: $lato;
         text-align: justify;
     }
-    
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-items: center;
+        padding: 1.2rem;
+        span{
+            margin-top: 2rem;
+            text-align: center;
+        }
+        img {
+            margin: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-items: center;
+
+        padding: 1.2rem;
+        
+        span{
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+
+
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: (3, 1fr);
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        padding: 3rem;
+        margin-right: 2rem;
+    }
 }

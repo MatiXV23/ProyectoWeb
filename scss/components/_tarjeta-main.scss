@@ -2,19 +2,9 @@
 
 
 .tarjeta-main{
-    display: flex;
-    width: 80%;
-    margin: 10rem 10rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(123,36,44,1) 39%, rgba(103,34,41,1) 84%); 
-    justify-content: space-around;
-    padding: 20px;
 
-    div{
-        
-        width: 30%;
-        
 
+    div {
         &:first-child{
             color: $blanco;
             text-align: center;
@@ -37,6 +27,52 @@
             }
         }
     }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 1rem 1rem;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(123,36,44,1) 39%, rgba(103,34,41,1) 84%); 
+        
+        padding: 20px;
+    
+        div{
+            
+            width: 100%;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 1rem;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(123,36,44,1) 39%, rgba(103,34,41,1) 84%); 
+        
+        padding: 2rem;
+    
+        div{
+            
+            width: 100%;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        width: 90%;
+        margin: 5rem 5rem;
+        background: rgb(255,255,255);
+        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(123,36,44,1) 39%, rgba(103,34,41,1) 84%); 
+        justify-content: space-around;
+        padding: 20px;
+    
+        div{
+            width: 30%;
+        }
+    }
+
 
 
 }
